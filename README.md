@@ -1,30 +1,67 @@
-# Symmetry-Operations
-Data files for "Symmetry operations and Critical Behaviour in Classical to Quantum Stochastic Processes" https://arxiv.org/pdf/2409.09277
 
-# Info
-This repository includes the data files (*.txt) and gnuplot scripts (*.gnu) to reproduce the figures presented in the paper “Symmetry Operations and Critical Behaviour in Classical to Quantum Stochastic Processes.”
+# Data and Code for Physical Review E Article
 
-# Instruccions
-Download `/data` directory and open your favorite `term` in `/data/code` then type the following commands
-```bash
-gnuplot Observables-12S.gnu
-gnuplot MIS00_0_Cohe_HAD.gnu
-gnuplot Shrtime_0_Cohe_SYH_HAD.gnu
-```
-this process creates the `.tex` files. Now you can compile with the standard `pdflatex` 
-```bash
-for i in *.tex; do pdflatex "$i"; done
-```
-Finally you can remove the unnecessary files
-```bash
-rm *.tex *-to.pdf *.eps *.aux *.log
-```
+## 📄 Associated Publication
+This repository contains the data and code to reproduce all figures and results for the article:
 
-Tasted using `Ubuntu 24.04` `GNUPLOT 6.0 patchlevel 0` and `Tex Live version 2023` .
+**"Symmetry operations and Critical Behaviour in Classical to Quantum Stochastic Processes"**
+* **Journal:** Physical Review E (PRE)
+* **Preprint:** https://arxiv.org/pdf/2409.09277
+* **Published Version (Please Cite):** [Insert Final DOI Link Here]
 
+---
 
-# LICENSE
-The data files in this repository (all files in the /data directory) are dedicated to the public domain under the Creative Commons Zero (CC0 1.0) Public Domain Dedication. The user is expected to cite the associated journal article [[https://arxiv.org/pdf/2409.09277]] as a matter of scientific best practice.
+## 💾 Repository Contents and Mapping
 
-# CODE_LICENSE
-All source code and scripts in this repository (all files in the /code directory) are released under the MIT License.
+This repository contains two main elements:
+
+* **Raw Data:** Files in the `/data` directory (*.txt).
+* **Gnuplot Scripts:** Files in the `/code` directory (*.gnu) used to generate the figures.
+
+| Paper Figure | Gnuplot Script (*.gnu) | Generated File (*.tex) |
+| :--- | :--- | :--- |
+| **Figure 1** | `Observables-12S.gnu` | `Observables-12S.tex` |
+| **Figure 2** | `Shrtime_0_Cohe_SYH_HAD.gnu` | `Shrtime_0_Cohe_SYH_HAD.tex` |
+| **Figure 3** | `MIS00_0_Cohe_HAD.gnu` | `MIS00_0_Cohe_HAD.tex` |
+
+---
+
+## 💻 Instructions for Reproduction
+
+To reproduce the figures, you must have **Gnuplot** and a **LaTeX distribution** (like Tex Live) installed.
+
+1.  **Navigate to the Code Directory:** Clone this repository and open your terminal in the `/code` directory.
+
+2.  **Generate .tex Files (Gnuplot):** Run the following Gnuplot scripts to generate the `.tex` files containing the figure code:
+    ```bash
+    gnuplot Observables-12S.gnu
+    gnuplot MIS00_0_Cohe_HAD.gnu
+    gnuplot Shrtime_0_Cohe_SYH_HAD.gnu
+    ```
+
+3.  **Compile Figures (LaTeX):** Compile the generated `.tex` files into PDF figures:
+    ```bash
+    for i in *.tex; do pdflatex "$i"; done
+    ```
+
+4.  **Cleanup (Optional):** Remove auxiliary files:
+    ```bash
+    rm *.tex *-to.pdf *.eps *.aux *.log
+    ```
+
+**Tested Environment:**
+* `Ubuntu 24.04`
+* `GNUPLOT 6.0 patchlevel 0`
+* `Tex Live version 2023`
+
+---
+
+## ⚖️ Licensing
+
+The data and code are licensed separately for clarity and maximum reusability.
+
+### Data License (CC0)
+The data files in this repository (all files in the `/data` directory) are dedicated to the public domain under the **Creative Commons Zero (CC0 1.0) Public Domain Dedication**. The user is expected to cite the associated journal article as a matter of scientific best practice.
+
+### Code License (MIT)
+All source code and scripts in this repository (all files in the `/code` directory) are released under the **MIT License**.
