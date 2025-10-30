@@ -6,17 +6,17 @@ This repository includes the data files (*.txt) and gnuplot scripts (*.gnu) to r
 
 # Instruccions
 Download `/data` directory and open your favorite `term` in `/data/code` then type the following commands
-```
+```bash
 gnuplot Observables-12S.gnu
 gnuplot MIS00_0_Cohe_HAD.gnu
 gnuplot Shrtime_0_Cohe_SYH_HAD.gnu
 ```
 this process creates the `.tex` files. Now you can compile with the standard `pdflatex` 
-```
+```bash
 for i in *.tex; do pdflatex "$i"; done
 ```
 Finally you can remove the unnecessary files
-```
+```bash
 rm *.tex *-to.pdf *.eps *.aux *.log
 ```
 
