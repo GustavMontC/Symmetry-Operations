@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.17480028.svg)](https://doi.org/10.5281/zenodo.17480028)
 
 # Data and Code for Physical Review E Article
 
@@ -57,6 +58,7 @@ To reproduce the figures, you must have **Gnuplot** and a **LaTeX distribution**
 ---
 
 ## ⚖️ Licensing
+**Dataset DOI:** [10.5281/zenodo.17480028](https://doi.org/10.5281/zenodo.17480028)
 
 The data and code are licensed separately for clarity and maximum reusability.
 
